@@ -1,0 +1,91 @@
+[
+  // --- Navigation ---
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor",
+    "description": "Next Tab"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor",
+    "description": "Previous Tab"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus",
+    "description": "Go to Definition (Override Toggle Sidebar)"
+  },
+  {
+    "key": "alt+left",
+    "command": "workbench.action.navigateBack",
+    "description": "Navigate Back in History"
+  },
+  {
+    "key": "alt+right",
+    "command": "workbench.action.navigateForward",
+    "description": "Navigate Forward in History"
+  },
+
+  // --- File Explorer (Fast Creation) ---
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "New File in Explorer"
+  },
+  {
+    "key": "shift+a",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "New Folder in Explorer"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "description": "Toggle Sidebar / Focus Explorer"
+  },
+
+  // --- Editing Power ---
+  {
+    "key": "alt+enter",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus",
+    "description": "Quick Fix / Import Module"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "editor.action.copyLinesUpAction",
+    "description": "Copy Line Up"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "editor.action.copyLinesDownAction",
+    "description": "Copy Line Down"
+  },
+  {
+    "key": "ctrl+d ctrl+d",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly",
+    "description": "Delete Line (Double Ctrl+D)"
+  },
+  {
+    "key": "f2",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus",
+    "description": "Rename Symbol"
+  },
+
+  // --- Terminal & Git ---
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "description": "Toggle Terminal"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active",
+    "description": "Open Source Control"
+  }
+]
